@@ -2,12 +2,6 @@ html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   font-family: sans-serif;
-  overflow: -moz-hidden-unscrollable;
-  height: 100%;
-}
-
-::-webkit-scrollbar {
-    display: none;
 }
 
 body {
