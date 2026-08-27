@@ -3881,7 +3881,7 @@ body {
     margin-bottom: -16px;
   }
 
-  .hamburger-link {
+  .hamburger-link, .hamburger-link-anchor {
     color: var(--white);
     text-decoration: none;
   }
