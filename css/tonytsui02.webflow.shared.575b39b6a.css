@@ -2803,7 +2803,7 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding-left: 72px;
+  padding-left: 69px;
   padding-right: 72px;
   display: flex;
   position: fixed;
@@ -3702,7 +3702,7 @@ body {
   }
 
   .nav-bar {
-    padding-left: 24px;
+    padding-left: 20px;
     padding-right: 20px;
     top: 16px;
   }
@@ -4075,7 +4075,7 @@ body {
   }
 
   .nav-bar {
-    padding-left: 16px;
+    padding-left: 13px;
     padding-right: 12px;
   }
 
