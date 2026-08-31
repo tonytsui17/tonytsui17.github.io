@@ -2527,7 +2527,7 @@ body {
 .view-site-link {
   color: #fff;
   cursor: none;
-  background-image: url("https://cdn.prod.website-files.com/6278ef9351a5790c0102096b/6278ef9351a579672f020a12_arrow-white-link%20(1).svg");
+  background-image: url("../images/arrow-white-link-20-1-.svg");
   background-position: 100%;
   background-repeat: no-repeat;
   background-size: auto 100%;
@@ -2561,7 +2561,7 @@ body {
 .noise {
   z-index: 0;
   opacity: 0;
-  background-image: url("https://cdn.prod.website-files.com/6278ef9351a5790c0102096b/6278ef9351a5795e29020987_noise.gif");
+  background-image: url("../images/noise.gif");
   background-position: 50%;
   background-repeat: repeat;
   background-size: 250px 250px;
@@ -2716,7 +2716,7 @@ body {
 .video-hover {
   color: #fff3bd;
   cursor: none;
-  background-image: url("https://cdn.prod.website-files.com/6278ef9351a5790c0102096b/67f4829445f1987b2f640dbf_mouse-pointer.svg");
+  background-image: url("../images/mouse-pointer.svg");
   background-position: 100% 70%;
   background-repeat: no-repeat;
   background-size: 14px 14px;
