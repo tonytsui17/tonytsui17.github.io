@@ -3132,12 +3132,13 @@ body {
 
 .about-message-wrapper {
   max-width: 760px;
+  margin-top: 72px;
 }
 
 .about-selfpic-wrapper {
   flex-flow: column;
   justify-content: flex-start;
-  align-items: flex-end;
+  align-items: flex-start;
   width: 400px;
   margin-top: -40px;
   margin-left: auto;
@@ -3149,7 +3150,7 @@ body {
   grid-template-columns: 1fr 1fr;
   grid-auto-columns: 1fr;
   width: 100%;
-  height: 720px;
+  height: 520px;
   display: flex;
   position: relative;
   overflow: hidden;
@@ -3164,7 +3165,7 @@ body {
 
 .image-noise {
   z-index: 2;
-  opacity: .05;
+  opacity: .1;
   width: 100%;
   height: 100%;
   position: absolute;
@@ -3180,9 +3181,8 @@ body {
   flex-flow: wrap;
   place-content: flex-start;
   align-items: flex-start;
-  width: 255px;
-  margin-top: 80px;
-  margin-bottom: 16px;
+  margin-top: 40px;
+  margin-bottom: 200px;
   display: flex;
 }
 
@@ -3201,20 +3201,20 @@ body {
 
 .about-gif-content {
   z-index: 1;
-  grid-column-gap: 32px;
-  grid-row-gap: 32px;
+  grid-column-gap: 24px;
+  grid-row-gap: 24px;
   flex-flow: row;
   flex: none;
   justify-content: flex-end;
   align-items: flex-start;
-  padding-left: 32px;
+  padding-left: 24px;
   display: flex;
   position: relative;
 }
 
 .image-about-gif {
   aspect-ratio: 96 / 65;
-  width: 384px;
+  width: 520px;
 }
 
 .about-experience-list, .about-experience-block {
@@ -3520,6 +3520,30 @@ body {
   text-decoration: none;
 }
 
+.about-gif-scrim-01 {
+  z-index: 999;
+  background-image: linear-gradient(90deg, var(--black) 20%, #15171b00);
+  width: 80px;
+  height: 100%;
+  position: absolute;
+  inset: 0% auto 0% -80px;
+}
+
+.about-gif-scrim-01._02 {
+  background-image: linear-gradient(90deg, #15171b00, var(--black) 80%);
+  width: 80px;
+  inset: 0% -80px 0% auto;
+}
+
+.about-gif-scrim-02 {
+  z-index: 999;
+  background-image: linear-gradient(90deg, #fff0, #15171b 80%);
+  width: 80px;
+  height: 100%;
+  position: absolute;
+  inset: 0% -80px 0% auto;
+}
+
 @media screen and (max-width: 991px) {
   .scrollify-sections {
     padding-left: 48px;
@@ -3791,6 +3815,7 @@ body {
   .about-message-wrapper {
     width: 100%;
     max-width: none;
+    margin-top: 0;
   }
 
   .about-selfpic-wrapper {
@@ -3800,15 +3825,16 @@ body {
   }
 
   .about-selfpic-flex {
-    height: 560px;
+    height: 480px;
   }
 
   .about-tags-wrapper {
     margin-top: 40px;
+    margin-bottom: 160px;
   }
 
   .image-about-gif {
-    width: 320px;
+    width: 400px;
   }
 
   .about-experience-content {
@@ -3884,6 +3910,18 @@ body {
   .hamburger-link, .hamburger-link-anchor {
     color: var(--white);
     text-decoration: none;
+  }
+
+  .about-gif-scrim-01 {
+    background-image: linear-gradient(90deg, var(--black) 10%, #15171b00);
+    width: 40px;
+    left: -32px;
+  }
+
+  .about-gif-scrim-02 {
+    background-image: linear-gradient(90deg, #fff0, #15171b 90%);
+    width: 40px;
+    right: -32px;
   }
 }
 
@@ -4151,8 +4189,17 @@ body {
     line-height: 27px;
   }
 
+  .about-selfpic-flex {
+    height: 320px;
+  }
+
+  .about-tags-wrapper {
+    margin-top: 24px;
+    margin-bottom: 120px;
+  }
+
   .image-about-gif {
-    width: 280px;
+    width: 360px;
   }
 
   .contact-form-button {
@@ -4183,6 +4230,16 @@ body {
   .image-logo {
     width: 32px;
     height: 32px;
+  }
+
+  .about-gif-scrim-01 {
+    width: 32px;
+    left: -24px;
+  }
+
+  .about-gif-scrim-02 {
+    width: 32px;
+    right: -24px;
   }
 }
 
@@ -4419,10 +4476,16 @@ body {
     grid-row-gap: 100px;
   }
 
-  .about-gif-content {
-    grid-column-gap: 24px;
-    grid-row-gap: 24px;
-    padding-left: 24px;
+  .about-selfpic-flex {
+    height: 280px;
+  }
+
+  .about-tags-wrapper {
+    margin-bottom: 80px;
+  }
+
+  .image-about-gif {
+    width: 320px;
   }
 
   .spacer-160 {
@@ -4441,5 +4504,9 @@ body {
   .flex-24.max-width-908 {
     grid-column-gap: 16px;
     grid-row-gap: 16px;
+  }
+
+  .about-gif-scrim-01, .about-gif-scrim-02 {
+    width: 28px;
   }
 }
