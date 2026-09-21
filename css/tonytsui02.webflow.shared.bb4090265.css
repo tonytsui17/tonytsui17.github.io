@@ -3061,6 +3061,7 @@ body {
   width: 100%;
   padding-bottom: 200px;
   display: flex;
+  overflow: hidden;
 }
 
 .footer-marquee {
@@ -3117,6 +3118,7 @@ body {
 
 .footer-link {
   flex-flow: column;
+  -webkit-text-decoration: none;
   text-decoration: none;
   transition: all .3s;
   display: flex;
@@ -3176,7 +3178,7 @@ body {
 }
 
 .about-selfpic-image {
-  opacity: .6;
+  opacity: .5;
   object-fit: cover;
   width: 100%;
   height: 120%;
@@ -3184,7 +3186,7 @@ body {
 
 .image-noise {
   z-index: 2;
-  opacity: .1;
+  opacity: .08;
   width: 100%;
   height: 100%;
   position: absolute;
@@ -3617,6 +3619,20 @@ body {
   height: 100%;
 }
 
+.footer-link-anchor {
+  flex-flow: column;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  transition: all .3s;
+  display: flex;
+}
+
+.footer-link-anchor:hover {
+  text-decoration: underline;
+  -webkit-text-decoration-color: var(--white);
+  text-decoration-color: var(--white);
+}
+
 @media screen and (max-width: 991px) {
   .scrollify-sections {
     padding-left: 48px;
@@ -3821,6 +3837,8 @@ body {
   .grid-wrapper.footer-wrapper {
     grid-column-gap: 48px;
     grid-row-gap: 48px;
+    padding-left: 32px;
+    padding-right: 32px;
   }
 
   .flex-12.empty {
@@ -4083,7 +4101,7 @@ body {
   .bg-circle-03 {
     width: 120px;
     height: 120px;
-    bottom: 0%;
+    bottom: 12%;
   }
 
   .section.about {
@@ -4216,6 +4234,11 @@ body {
     padding-right: 24px;
   }
 
+  .grid-wrapper.footer-wrapper {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
   .text-medium-bold {
     font-size: 18px;
     line-height: 27px;
@@ -4268,6 +4291,7 @@ body {
 
   .lighting-deco {
     height: 640px;
+    overflow: hidden;
   }
 
   .text-medium-regular {
