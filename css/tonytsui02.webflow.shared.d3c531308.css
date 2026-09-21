@@ -2410,6 +2410,12 @@ body {
   align-items: center;
 }
 
+.section.sticky {
+  z-index: 2;
+  position: sticky;
+  top: 160px;
+}
+
 .about-arrow-block {
   z-index: 1;
   opacity: 1;
@@ -2854,10 +2860,12 @@ body {
 }
 
 .grid-wrapper {
+  z-index: 1;
   flex-flow: column;
   width: 100%;
   max-width: 1440px;
   display: flex;
+  position: relative;
 }
 
 .grid-wrapper.footer-wrapper {
@@ -3421,7 +3429,6 @@ body {
   width: 100%;
   display: flex;
   position: relative;
-  overflow: hidden;
 }
 
 .helios-full-wrapper {
@@ -3582,6 +3589,32 @@ body {
   font-size: 72px;
   font-weight: 700;
   line-height: 72px;
+}
+
+.scroll-wrapper {
+  z-index: 1;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  flex-flow: row;
+  grid-template-rows: 1fr 560px;
+  grid-template-columns: 100%;
+  grid-auto-columns: 1fr;
+  justify-content: flex-start;
+  margin-bottom: -400px;
+  display: grid;
+  position: relative;
+}
+
+.scroll-trigger {
+  pointer-events: none;
+  height: 100%;
+  position: absolute;
+  inset: 50% 0% auto;
+}
+
+.spacer-120vh {
+  width: 1px;
+  height: 100%;
 }
 
 @media screen and (max-width: 991px) {
@@ -4299,6 +4332,11 @@ body {
     font-size: 64px;
     line-height: 64px;
   }
+
+  .scroll-wrapper {
+    grid-template-rows: 1fr 720px;
+    margin-bottom: -600px;
+  }
 }
 
 @media screen and (max-width: 479px) {
@@ -4566,4 +4604,8 @@ body {
   .about-gif-scrim-01, .about-gif-scrim-02 {
     width: 28px;
   }
+}
+
+#helios-height.w-node-be4496ce-c3ad-e9ce-642a-acf47b36fcd2-1cf44393, #helios-height.w-node-_03457c83-8e9f-bee3-1786-a20cd5daaeb7-b58f63b8, #helios-height.w-node-a7bf2500-2669-177c-3191-8ce856c9cec8-343b6d3f, #helios-height.w-node-d740e2cf-c1dc-0600-89d1-57efebe55ff7-4a995df8 {
+  grid-area: span 1 / span 1 / span 1 / span 1;
 }
