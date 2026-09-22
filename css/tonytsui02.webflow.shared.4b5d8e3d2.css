@@ -3011,9 +3011,9 @@ body {
 
 .text-xxl-bold {
   border-bottom: 1px solid var(--black);
-  font-size: 48px;
+  font-size: 44px;
   font-weight: 700;
-  line-height: 52.8px;
+  line-height: 48.4px;
   overflow: hidden;
 }
 
@@ -3022,7 +3022,7 @@ body {
   flex: 1;
   justify-content: center;
   align-items: center;
-  max-width: 560px;
+  max-width: 520px;
   display: flex;
   overflow: hidden;
 }
@@ -4262,11 +4262,6 @@ body {
   .selected-work-list, .selected-work-block {
     grid-column-gap: 56px;
     grid-row-gap: 56px;
-  }
-
-  .selected-work-content {
-    grid-column-gap: 16px;
-    grid-row-gap: 16px;
   }
 
   .text-xxl-bold {
