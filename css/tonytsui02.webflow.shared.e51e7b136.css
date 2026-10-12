@@ -300,6 +300,14 @@ input.w-button {
   display: none;
 }
 
+.w-modal:not([open]):not([popover]) {
+  display: none;
+}
+
+.w-modal[popover]:not(:popover-open) {
+  display: none;
+}
+
 html[data-w-dynpage] [data-w-cloak] {
   color: #0000 !important;
 }
@@ -2538,7 +2546,7 @@ body {
 .view-site-link {
   color: #fff;
   cursor: none;
-  background-image: url("https://cdn.prod.website-files.com/6278ef9351a5790c0102096b/6278ef9351a579672f020a12_arrow-white-link%20(1).svg");
+  background-image: url("../images/arrow-white-link-20-1-.svg");
   background-position: 100%;
   background-repeat: no-repeat;
   background-size: auto 100%;
@@ -2572,7 +2580,7 @@ body {
 .noise {
   z-index: 0;
   opacity: 0;
-  background-image: url("https://cdn.prod.website-files.com/6278ef9351a5790c0102096b/6278ef9351a5795e29020987_noise.gif");
+  background-image: url("../images/noise.gif");
   background-position: 50%;
   background-repeat: repeat;
   background-size: 250px 250px;
@@ -2727,7 +2735,7 @@ body {
 .video-hover {
   color: #fff3bd;
   cursor: none;
-  background-image: url("https://cdn.prod.website-files.com/6278ef9351a5790c0102096b/67f4829445f1987b2f640dbf_mouse-pointer.svg");
+  background-image: url("../images/mouse-pointer.svg");
   background-position: 100% 70%;
   background-repeat: no-repeat;
   background-size: 14px 14px;
@@ -3426,7 +3434,7 @@ body {
 
 .work-image-small {
   z-index: 1;
-  aspect-ratio: 73 / 41;
+  aspect-ratio: 16 / 9;
   border-radius: 12px;
   width: 100%;
   position: relative;
@@ -4669,6 +4677,6 @@ body {
   }
 }
 
-#helios-height.w-node-be4496ce-c3ad-e9ce-642a-acf47b36fcd2-1cf44393, #helios-height.w-node-_03457c83-8e9f-bee3-1786-a20cd5daaeb7-b58f63b8, #helios-height.w-node-a7bf2500-2669-177c-3191-8ce856c9cec8-343b6d3f, #helios-height.w-node-d740e2cf-c1dc-0600-89d1-57efebe55ff7-4a995df8 {
+#helios-height.w-node-be4496ce-c3ad-e9ce-642a-acf47b36fcd2-1cf44393, #helios-height.w-node-_03457c83-8e9f-bee3-1786-a20cd5daaeb7-b58f63b8, #helios-height.w-node-a7bf2500-2669-177c-3191-8ce856c9cec8-343b6d3f, #helios-height.w-node-d740e2cf-c1dc-0600-89d1-57efebe55ff7-4a995df8, #helios-height.w-node-d740e2cf-c1dc-0600-89d1-57efebe55ff7-414dbb65 {
   grid-area: span 1 / span 1 / span 1 / span 1;
 }
